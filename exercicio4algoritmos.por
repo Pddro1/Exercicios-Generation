@@ -1,18 +1,20 @@
 programa
 {
+	inclua biblioteca Matematica -->mat
 	
 	funcao inicio()
 	{
-		inteiro A,B,C,D,R,S
+		inteiro a,b,c
+		real d
 		escreva("\nA = ")
-		leia(A)
+		leia(a)
 		escreva("\nB = ")
-		leia(B)
+		leia(b)
 		escreva("\nC = ")
-		leia(C)
-		escreva("\nR = ",R = (A + B)*(A + B))
-		escreva("\nS = ",S = (B + C)*(B + C))
-		escreva("\nD = ",D = (R + S) / 2)
+		leia(c)
+		
+		d = (mat.potencia((a+b),2.0)+mat.potencia((b+c),2.0))/2
+		escreva("\nO Valor de D é: ",d)
 		
 	}
 	
@@ -22,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 242; 
+ * @POSICAO-CURSOR = 282; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

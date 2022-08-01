@@ -3,21 +3,17 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro b,h,trian
-		escreva("\nBase: ")
-		leia(b)
-		escreva("\nAltura : ")
-		leia(h)
+		inteiro idade,anos,meses,dias,totaldias
+		escreva("\nAnos: ")
+		leia(anos)
+		escreva("\nMeses: ")
+		leia(meses)
+		escreva("\nDias: ")
+		leia(dias)
+
+		totaldias = (anos * 365 + meses * 30 + dias)
+		escreva("Idade em dias: ",totaldias)
 		
-		trian = (b*h)/2
-		se (b>0 e h>0)
-		{
-			escreva("Área do Triângulo: ",trian)
-		}
-		senao se (b<0 e h<0)
-		{
-			escreva("Número Inválido")
-		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -25,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 228; 
+ * @POSICAO-CURSOR = 233; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
