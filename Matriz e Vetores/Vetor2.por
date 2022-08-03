@@ -4,7 +4,7 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro dado[10],x,maiorl=0
+		inteiro dado[10],x,maiorl=0,contl=0
 		real somad=0.0,mediad=0.0
 
 		escreva("\n||Lançamento do Dado||\n")
@@ -23,10 +23,18 @@ programa
 			escreva(dado[x], " ")
 			
 		}
+		para(x=0;x<10;x++)
+		{
+			se(maiorl == dado[x])
+			{
+				contl++
+			}
+		}
 		escreva("\n")
 		mediad=somad/10
 		escreva("\nMédia Aritmética: ",mediad)
 		escreva("\nMaior Lançamento: ",maiorl)
+		escreva("\nQuantidade de vezes do maior valor: ",contl)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -34,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 249; 
+ * @POSICAO-CURSOR = 592; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {dado, 7, 10, 4};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
