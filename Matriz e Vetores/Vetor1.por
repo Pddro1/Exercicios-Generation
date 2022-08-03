@@ -3,15 +3,21 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro h,m,s
+		real ponto[5],maiorp=0.0
+		inteiro x
 
-		escreva("\nDuração do Evento: ")
-		leia(s)
+		para(x=0;x<5;x++)
+		{
+			escreva("\nTotal de Pontos: ")
+			leia(ponto[x])
+		
 
-		h = s / 3600
-		m = s % 3600 / 60
-		s = s % 3600 % 60
-		escreva("\nA duração do evento foi de: ", h," Horas ", m, " Minutos e ",s," Segundos")
+		se(ponto[x]>maiorp)
+			{
+				maiorp=ponto[x]
+			}
+		}
+		escreva("\nMaior Pontuação: ",maiorp)
 		
 	}
 }
@@ -20,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 53; 
+ * @POSICAO-CURSOR = 64; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
